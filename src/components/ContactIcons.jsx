@@ -15,14 +15,14 @@ const ContactIcons = () => {
      { icon: <FaGithub />,link:'https://github.com/gauravdwivedE'},
       {icon: <BsInstagram />, link:'https://www.instagram.com/_gaurav.0__/'}
     ].map((item, index) => (
-      <a
+      <NavLink
         href = {item.link}
         target='_blank'
         key={index}
         className="w-5 flex text-gray-500 items-center justify-center cursor-pointer transition-transform duration-200 transform hover:scale-125 hover:text-black hover:font-bold"
       >
         {item.icon}
-      </a>
+      </NavLink>
     ))}
     </p>
   )
