@@ -5,7 +5,7 @@ import { NavLink } from 'react-router-dom';
 const BottomLink = ({text, link}) => {
   return (
     <p className='text-[13px] mt-17 mb-8 flex gap-10 items-center'>
-    <NavLink href={link} className="relative group text-gray-600">
+    <NavLink to={link} className="relative group text-gray-600">
       <span className="group-hover:text-black transition-colors duration-300">
         {text}
       </span>
